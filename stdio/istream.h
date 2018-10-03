@@ -2,7 +2,7 @@
 #define ISTREAM_H
 
 #include "streambuf.h"
-#include "libft.h"
+#include "libc.h"
 #include "string.h"
 
 namespace std

@@ -1,7 +1,7 @@
 #ifndef MALLOC_H
 #define MALLOC_H
 
-extern void*	sbrk (long long size);
+extern "C" void *sbrk (intptr_t size);
 
 #define MALLOC_FREE_BIT ((size_t)1 << (sizeof(size_t) * 8LL - 1LL))
 

@@ -35,7 +35,6 @@ std::string std::to_string (long value, int mod = 10) {
 	(void)value;
 	(void)mod;
 	std::string result;
-	kprintf("to_string ::long::\n");
 	return result;
 }
 
@@ -43,7 +42,6 @@ std::string std::to_string (long long value, int mod = 10) {
 	(void)value;
 	(void)mod;
 	std::string result;	
-	kprintf("to_string ::long long::\n");
 	return result;	
 }
 
@@ -57,7 +55,6 @@ std::string std::to_string (unsigned long value, int mod = 10) {
 	(void)value;
 	(void)mod;
 	std::string result;
-	kprintf("to_string ::unsigned long::\n");
 	return result;
 }
 
@@ -65,7 +62,6 @@ std::string std::to_string (unsigned long long value, int mod = 10) {
 	(void)value;
 	(void)mod;
 	std::string result;	
-	kprintf("to_string ::unsigned long long::\n");
 	return result;	
 }
 
@@ -73,7 +69,6 @@ std::string std::to_string (float value, int mod = 10) {
 	(void)value;
 	(void)mod;
 	std::string result;	
-	kprintf("to_string ::float::\n");
 	return result;	
 }
 
@@ -81,7 +76,6 @@ std::string std::to_string (double value, int mod = 10) {
 	(void)value;
 	(void)mod;
 	std::string result;
-	kprintf("to_string ::double::\n");
 	return result;
 }
 
@@ -89,7 +83,6 @@ std::string std::to_string (long double value, int mod = 10) {
 	(void)value;
 	(void)mod;
 	std::string result;
-	kprintf("to_string ::long double::\n");
 	return result;
 }
 

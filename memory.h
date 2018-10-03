@@ -1,6 +1,7 @@
 #ifndef MEMORY_H
 #define MEMORY_H
 
+#include "new.h"
 #include "utility.h"
 
 namespace std

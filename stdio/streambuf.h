@@ -3,7 +3,6 @@
 
 #include "vector.h"
 #include "deque.h"
-// #include "libft.h"
 
 namespace std
 {

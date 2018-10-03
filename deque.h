@@ -2,6 +2,7 @@
 #define DEQUE_H
 
 #include <initializer_list>
+#include "new.h"
 #include "memory.h"
 #include "utility.h"
 

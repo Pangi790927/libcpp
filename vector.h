@@ -4,7 +4,7 @@
 #include <initializer_list>
 #include "algorithm.h"
 #include "utility.h"
-#include "libft.h"
+#include "new.h"
 
 namespace std
 {
@@ -12,7 +12,7 @@ namespace std
 	class vector {
 		static const size_t min_add = std::max(sizeof(void *) * 4, sizeof(Type) * 4);
 
-		uint8 *buffer = NULL;
+		uint8_t *buffer = NULL;
 		size_t count = 0;
 		size_t containerSize = 0;
 
@@ -116,19 +116,19 @@ std::vector<Type>::~vector() {
 
 template <typename Type>
 Type *std::vector<Type>::allocAt (unsigned int index) {
-	return new ((Type *)((uint8 *)buffer + index * sizeof(Type))) Type();
+	return new ((Type *)((uint8_t *)buffer + index * sizeof(Type))) Type();
 }
 
 template <typename Type>
 void std::vector<Type>::freeAt (unsigned int index) {
-	Type *ptr = (Type *)((uint8 *)buffer + index * sizeof(Type));
+	Type *ptr = (Type *)((uint8_t *)buffer + index * sizeof(Type));
 	ptr->~Type();
 	// delete (ptr, ptr); not usefull and I don't really know how to use it anyway
 }
 
 template <typename Type>
 void std::vector<Type>::reserve (size_t capacity) {
-	uint8 *newBuffer = new uint8 [containerSize + capacity];
+	uint8_t *newBuffer = new uint8_t [containerSize + capacity];
 
 	if (buffer) {
 		memcpy(newBuffer, buffer, count * sizeof(Type));

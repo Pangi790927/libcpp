@@ -1,8 +1,10 @@
 #ifndef STRING_H
 #define STRING_H
 
-#include "libft.h"
+#include "new.h"
 #include "vector.h"
+
+// those string operations are in general verry verry slow
 
 namespace std
 {
